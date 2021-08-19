@@ -17,6 +17,7 @@ class _ClientViewState extends State<ClientView> {
         child: Container(
           padding: EdgeInsets.all(16),
           child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Row(
                 children: [
@@ -32,54 +33,14 @@ class _ClientViewState extends State<ClientView> {
               ),
               Padding(
                 padding: EdgeInsets.only(top: 10),
-                child: Text(
-                  'Lorem Ipsum is simply dummy text of the printing and typesetting industry.'
-                      ' Lorem Ipsum is simply dummy text of the printing and typesetting industry. '
-                      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. '
-                      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. '
-                      'Lorem Ipsum is simply dummy text of the printing and typesetting industry.'
-                      ' Lorem Ipsum is simply dummy text of the printing and typesetting industry. '
-                      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. '
-                      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. '
-                      'Lorem Ipsum is simply dummy text of the printing and typesetting industry.'
-                      ' Lorem Ipsum is simply dummy text of the printing and typesetting industry. '
-                      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. '
-                      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. '
-                      'Lorem Ipsum is simply dummy text of the printing and typesetting industry.'
-                      ' Lorem Ipsum is simply dummy text of the printing and typesetting industry. '
-                      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. '
-                      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. '
-                      'Lorem Ipsum is simply dummy text of the printing and typesetting industry.'
-                      ' Lorem Ipsum is simply dummy text of the printing and typesetting industry. '
-                      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. '
-                      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. '
-                      'Lorem Ipsum is simply dummy text of the printing and typesetting industry.'
-                      ' Lorem Ipsum is simply dummy text of the printing and typesetting industry. '
-                      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. '
-                      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. '
-                      'Lorem Ipsum is simply dummy text of the printing and typesetting industry.'
-                      ' Lorem Ipsum is simply dummy text of the printing and typesetting industry. '
-                      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. '
-                      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. '
-                      'Lorem Ipsum is simply dummy text of the printing and typesetting industry.'
-                      ' Lorem Ipsum is simply dummy text of the printing and typesetting industry. '
-                      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. '
-                      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. '
-                      'Lorem Ipsum is simply dummy text of the printing and typesetting industry.'
-                      ' Lorem Ipsum is simply dummy text of the printing and typesetting industry. '
-                      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. '
-                      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. '
-                      'Lorem Ipsum is simply dummy text of the printing and typesetting industry.'
-                      ' Lorem Ipsum is simply dummy text of the printing and typesetting industry. '
-                      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. '
-                      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. '
-                      'Lorem Ipsum is simply dummy text of the printing and typesetting industry.'
-                      ' Lorem Ipsum is simply dummy text of the printing and typesetting industry. '
-                      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. '
-                      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. ',
-                  textAlign: TextAlign.justify,
-                ),
+                child: Image.asset('assets/images/client1.png'),
               ),
+              Text('Empresa de software'),
+              Padding(
+                padding: EdgeInsets.only(top: 10),
+                child: Image.asset('assets/images/client2.png'),
+              ),
+              Text('Empresa de auditoria'),
             ],
           ),
         ),
