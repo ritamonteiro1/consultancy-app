@@ -8,7 +8,7 @@ class ContactView extends StatefulWidget {
 class _ContactViewState extends State<ContactView> {
   @override
   Widget build(BuildContext context) {
-    return  Scaffold(
+    return Scaffold(
       appBar: AppBar(
         title: Text('Contato'),
         backgroundColor: Colors.green,
@@ -17,6 +17,7 @@ class _ContactViewState extends State<ContactView> {
         child: Container(
           padding: EdgeInsets.all(16),
           child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Row(
                 children: [
@@ -32,53 +33,15 @@ class _ContactViewState extends State<ContactView> {
               ),
               Padding(
                 padding: EdgeInsets.only(top: 10),
-                child: Text(
-                  'Lorem Ipsum is simply dummy text of the printing and typesetting industry.'
-                      ' Lorem Ipsum is simply dummy text of the printing and typesetting industry. '
-                      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. '
-                      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. '
-                      'Lorem Ipsum is simply dummy text of the printing and typesetting industry.'
-                      ' Lorem Ipsum is simply dummy text of the printing and typesetting industry. '
-                      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. '
-                      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. '
-                      'Lorem Ipsum is simply dummy text of the printing and typesetting industry.'
-                      ' Lorem Ipsum is simply dummy text of the printing and typesetting industry. '
-                      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. '
-                      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. '
-                      'Lorem Ipsum is simply dummy text of the printing and typesetting industry.'
-                      ' Lorem Ipsum is simply dummy text of the printing and typesetting industry. '
-                      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. '
-                      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. '
-                      'Lorem Ipsum is simply dummy text of the printing and typesetting industry.'
-                      ' Lorem Ipsum is simply dummy text of the printing and typesetting industry. '
-                      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. '
-                      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. '
-                      'Lorem Ipsum is simply dummy text of the printing and typesetting industry.'
-                      ' Lorem Ipsum is simply dummy text of the printing and typesetting industry. '
-                      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. '
-                      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. '
-                      'Lorem Ipsum is simply dummy text of the printing and typesetting industry.'
-                      ' Lorem Ipsum is simply dummy text of the printing and typesetting industry. '
-                      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. '
-                      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. '
-                      'Lorem Ipsum is simply dummy text of the printing and typesetting industry.'
-                      ' Lorem Ipsum is simply dummy text of the printing and typesetting industry. '
-                      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. '
-                      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. '
-                      'Lorem Ipsum is simply dummy text of the printing and typesetting industry.'
-                      ' Lorem Ipsum is simply dummy text of the printing and typesetting industry. '
-                      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. '
-                      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. '
-                      'Lorem Ipsum is simply dummy text of the printing and typesetting industry.'
-                      ' Lorem Ipsum is simply dummy text of the printing and typesetting industry. '
-                      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. '
-                      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. '
-                      'Lorem Ipsum is simply dummy text of the printing and typesetting industry.'
-                      ' Lorem Ipsum is simply dummy text of the printing and typesetting industry. '
-                      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. '
-                      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. ',
-                  textAlign: TextAlign.justify,
-                ),
+                child: Text('atendimento@consultoria.com.br'),
+              ),
+              Padding(
+                padding: EdgeInsets.only(top: 10),
+                child: Text('Telefone: (11) 9999-9999'),
+              ),
+              Padding(
+                padding: EdgeInsets.only(top: 10),
+                child: Text('Celular: (11) 9999-9999'),
               ),
             ],
           ),
