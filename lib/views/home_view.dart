@@ -1,5 +1,9 @@
 import 'package:consultancy_app/views/enterprise_view.dart';
+import 'package:consultancy_app/views/service_view.dart';
 import 'package:flutter/material.dart';
+
+import 'client_view.dart';
+import 'contact_view.dart';
 
 class HomeView extends StatefulWidget {
   @override
@@ -7,8 +11,20 @@ class HomeView extends StatefulWidget {
 }
 
 class _HomeViewState extends State<HomeView> {
-  void _openEnterprise() {
+  void _openEnterpriseView() {
     Navigator.push(context, MaterialPageRoute(builder:(context) =>  EnterpriseView()));
+  }
+
+  void _openServiceView() {
+    Navigator.push(context, MaterialPageRoute(builder:(context) =>  ServiceView()));
+  }
+
+  void _openContactView() {
+    Navigator.push(context, MaterialPageRoute(builder:(context) =>  ContactView()));
+  }
+
+  void _openClientView() {
+    Navigator.push(context, MaterialPageRoute(builder:(context) =>  ClientView()));
   }
 
   @override
@@ -32,11 +48,11 @@ class _HomeViewState extends State<HomeView> {
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: [
                   GestureDetector(
-                    onTap: _openEnterprise,
+                    onTap: _openEnterpriseView,
                     child: Image.asset('assets/images/menu_enterprise.png'),
                   ),
                   GestureDetector(
-                    onTap: _openEnterprise,
+                    onTap: _openEnterpriseView,
                     child: Image.asset('assets/images/menu_service.png'),
                   ),
                 ],
@@ -48,11 +64,11 @@ class _HomeViewState extends State<HomeView> {
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: [
                   GestureDetector(
-                    onTap: _openEnterprise,
+                    onTap: _openEnterpriseView,
                     child: Image.asset('assets/images/menu_client.png'),
                   ),
                   GestureDetector(
-                    onTap: _openEnterprise,
+                    onTap: _openEnterpriseView,
                     child: Image.asset('assets/images/menu_contact.png'),
                   ),
                 ],
