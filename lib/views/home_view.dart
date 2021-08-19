@@ -1,9 +1,8 @@
 import 'package:consultancy_app/views/enterprise_view.dart';
 import 'package:consultancy_app/views/service_view.dart';
+import 'package:consultancy_app/views/client_view.dart';
+import 'package:consultancy_app/views/contact_view.dart';
 import 'package:flutter/material.dart';
-
-import 'client_view.dart';
-import 'contact_view.dart';
 
 class HomeView extends StatefulWidget {
   @override
@@ -52,7 +51,7 @@ class _HomeViewState extends State<HomeView> {
                     child: Image.asset('assets/images/menu_enterprise.png'),
                   ),
                   GestureDetector(
-                    onTap: _openEnterpriseView,
+                    onTap: _openServiceView,
                     child: Image.asset('assets/images/menu_service.png'),
                   ),
                 ],
@@ -64,11 +63,11 @@ class _HomeViewState extends State<HomeView> {
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: [
                   GestureDetector(
-                    onTap: _openEnterpriseView,
+                    onTap: _openClientView,
                     child: Image.asset('assets/images/menu_client.png'),
                   ),
                   GestureDetector(
-                    onTap: _openEnterpriseView,
+                    onTap: _openContactView,
                     child: Image.asset('assets/images/menu_contact.png'),
                   ),
                 ],
