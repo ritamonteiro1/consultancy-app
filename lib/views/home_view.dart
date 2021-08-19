@@ -1,4 +1,4 @@
-import 'package:flutter/foundation.dart';
+import 'package:consultancy_app/views/enterprise_view.dart';
 import 'package:flutter/material.dart';
 
 class HomeView extends StatefulWidget {
@@ -7,7 +7,9 @@ class HomeView extends StatefulWidget {
 }
 
 class _HomeViewState extends State<HomeView> {
-  void _openEnterprise() {}
+  void _openEnterprise() {
+    Navigator.push(context, MaterialPageRoute(builder:(context) =>  EnterpriseView()));
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -21,11 +23,13 @@ class _HomeViewState extends State<HomeView> {
         padding: EdgeInsets.all(16),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Image.asset('assets/images/logo.png'),
             Padding(
               padding: EdgeInsets.only(top: 32),
               child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: [
                   GestureDetector(
                     onTap: _openEnterprise,
@@ -41,6 +45,7 @@ class _HomeViewState extends State<HomeView> {
             Padding(
               padding: EdgeInsets.only(top: 32),
               child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: [
                   GestureDetector(
                     onTap: _openEnterprise,
